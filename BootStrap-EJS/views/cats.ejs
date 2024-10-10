@@ -1,0 +1,16 @@
+<%- include('partials/head') %>
+
+
+    <%- include('partials/navbar') %>
+        <h1>All the Cats</h1>
+        <ul>
+            <% for( let cat of cats) { %>
+                <li>
+                    <%= cat %>
+                </li>
+                <% } %>
+        </ul>
+        <%- include('partials/footer') %>
+
+            <%# // < % is to write JS code in EJS %>
+                <%# // < %=is to write JS code that will be displayed in the HTML </html>%>
